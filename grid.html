@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="c:\Users\Admin\Documents\Munees vscode\vs.html\beycon.jfif">
+    <title>Grid Layout Example</title>
+</head>
+<style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Header Styles */
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Section Styles */
+.section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    background-color: #f4f4f4;
+}
+
+.column1 {
+    background-color: #faa7b2;
+    padding:250px;
+    text-align: center;
+    border: 1px solid #1502e7;
+    width:70vw;
+}
+
+
+
+.column2 {
+    background-color: #eef8b5;
+    text-align: center;
+    padding:190px;
+    border: 1px solid #de3434;
+    width:20vw;
+}
+
+/* Footer Styles */
+.footer {
+
+        background-color: #299112;
+        color: #fff;
+        display: grid;
+        position: fixed;
+        bottom: 0px;
+        width:100vw;
+        height:10vh;
+        grid-template-rows: repeat(70);
+        text-align: center;
+        justify-content: center;
+}
+</style>
+<body>
+    <div class="container">
+        <header class="header">Header</header>
+        <section class="section">
+            <div class="column1 column1-left">Column 1</div>
+            <div class="column2 column2-right">Column 2</div>
+        </section>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>
